@@ -8,13 +8,13 @@ are configurable via plugin settings.
 
 The standard endpoint for url sharing is http://example.com/oexchange/share
 
-When a user hits the sharing endpoint with a valid url to share they will be asked to log in if not already
+When a user hits the sharing endpoint with a valid url to share they will be asked to log in if not already.
 Once logged in they will be forwarded to the relevant form to share their link on the site.
 
-This behavior can be modified by plugins by registering for the 'oexchange','requires_login' plugin hook to define
+This behavior can be modified by plugins by registering for the ```'oexchange','requires_login'``` plugin hook to define
 whether it's necessary to be logged in to handle a shared url (default is true)
 
-Registering for the 'oexchange','share' plugin hook can allow a plugin to define where the user should end up to actually
+Registering for the ```'oexchange','share'``` plugin hook can allow a plugin to define where the user should end up to actually
 share the link on the site.  The plugin should return array('status' => true, 'url' => target_url).
 It's a good idea for plugin hooks to check the return status to ensure another plugin hook has not already handled the request.
 Plugin hooks receive all standard oexchange get parameters as $params, however only url is required and enforced by this plugin.
