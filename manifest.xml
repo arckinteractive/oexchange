@@ -3,7 +3,7 @@
 
 	<name>OExchange</name>
         <id>oexchange</id>
-	<version>1.0</version>
+	<version>1.0.0</version>
 
 	<description>Provides a framework for using oexchange in elgg</description>
 
